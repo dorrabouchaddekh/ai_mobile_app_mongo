@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 
 import 'ai_chat_image/chat_screens.dart';
 
-
-
 void main() {
   runApp(const MyApp());
 }
@@ -23,14 +21,17 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         useMaterial3: true,
       ),
-    
+
       initialRoute: '/',
       routes: {
+
         // When navigating to the "/" route, build the FirstScreen widget.
-    
         '/': (context) => const Signin(),
-        // When navigating to the "/second" route, build the SecondScreen widget.
+
+        // When navigating to the "/signup" route, build the Signup widget.
         '/signup': (context) => const Signup(),
+
+        // When navigating to the "/chatscreen" route, build the Chatscreen widget.
         '/chatscreen': (context) => const ChatScreen(),
       },
 
